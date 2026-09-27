@@ -1,0 +1,10 @@
+{
+  "description": "Quickly send SOS alerts with your location to trusted contacts, ensuring safety and real-time tracking during emergencies.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

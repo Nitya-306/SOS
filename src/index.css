@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Theme: Swiss strict grid + high contrast emergency */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-card: #f9f9f9;
+  --color-card-foreground: #111111;
+  --color-primary: #000000;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #e5e5e5;
+  --color-secondary-foreground: #1a1a1a;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #666666;
+  --color-accent: #e53935; /* Urgent Red */
+  --color-accent-foreground: #ffffff;
+  --color-border: #e0e0e0;
+  --color-ring: rgba(0, 0, 0, 0.2);
+  --color-success: #2e7d32;
+  --color-success-foreground: #ffffff;
+  
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    touch-action: pan-y; /* Optimize for mobile scrolling */
+  }
+
+  /* Remove default highlight on mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
